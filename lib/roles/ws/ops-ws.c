@@ -1230,7 +1230,7 @@ drain:
 			 * Something has gone wrong, we are spinning...
 			 * let's bail on this connection
 			 */
-			return LWS_HPI_RET_PLEASE_CLOSE_ME;
+			return LWS_HPI_RET_HANDLED;
 	}
 
 	if (buffered && /* were draining, now nothing left */
